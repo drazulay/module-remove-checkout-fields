@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="drazulay_removecheckoutfields" translate="label" sortOrder="99" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Remove Checkout Address Fields</label>
+            <tab>drazulay</tab>
+            <resource>Drazulay_RemoveCheckoutFields::config</resource>
+            <group id="address_fields" translate="label" type="text" sortOrder="99" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Address Fields</label>
+                <comment>Address fields to remove from the checkout address forms</comment>
+                <field id="shipping_address_fields" translate="label" type="multiselect" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Shipping Address Fields</label>
+                    <source_model>Drazulay\RemoveCheckoutFields\Model\Config\Source\AddressFields</source_model>
+                    <can_be_empty>1</can_be_empty>
+                </field>
+                <field id="billing_address_fields" translate="label" type="multiselect" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Billing Address Fields</label>
+                    <source_model>Drazulay\RemoveCheckoutFields\Model\Config\Source\AddressFields</source_model>
+                    <can_be_empty>1</can_be_empty>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

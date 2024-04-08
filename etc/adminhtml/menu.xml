@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Drazulay_Base::menu_removecheckoutfields" title="Remove Checkout Fields" module="Drazulay_RemoveCheckoutFields" sortOrder="99" parent="Drazulay_Base::menu" action="adminhtml/system_config/edit/section/drazulay_removecheckoutfields" resource="Drazulay_Base::config"/>
+    </menu>
+</config>

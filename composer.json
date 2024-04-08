@@ -1,0 +1,20 @@
+{
+    "name": "drazulay/module-remove-checkout-fields",
+    "description": "Remove billing and shipping address fields from the checkout address forms",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Drazulay\\RemoveCheckoutFields\\": ""
+        }
+    },
+    "authors": [
+        {
+            "name": "Daniel R. Azulay",
+            "email": "daniel@danielazulay.eu"
+        }
+    ],
+    "require": {
+        "drazulay/module-base": "^1.0"
+    }
+}
