@@ -1,20 +1,25 @@
 {
     "name": "drazulay/module-remove-checkout-fields",
-    "description": "Remove billing and shipping address fields from the checkout address forms",
-    "type": "library",
-    "license": "MIT",
-    "autoload": {
-        "psr-4": {
-            "Drazulay\\RemoveCheckoutFields\\": ""
-        }
-    },
-    "authors": [
+    "description": "Remove checkout fields from the billing and shipping address forms in Magento 2",
+    "type": "magento2-module",
+    "license": [
+        "proprietary"
+    ],
+    "authors":[
         {
-            "name": "Daniel R. Azulay",
-            "email": "daniel@danielazulay.eu"
+            "name":"Daniel R. Azulay",
+            "email":"daniel@danielazulay.eu"
         }
     ],
     "require": {
         "drazulay/module-base": "^1.0"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Drazulay\\RemoveCheckoutFields\\": ""
+        }
     }
 }
